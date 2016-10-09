@@ -1,5 +1,5 @@
 # react-webpack-setup
-React Webpack Babel setup for kickstarting project in no time
+React Webpack Babel Koa setup for kickstarting project in no time
 
 > This repo is for those who doesn't want to mess up with react webpack babel setup. This app does it for you. You start writing your application logic starting from "App.js"
 
