@@ -8,7 +8,7 @@ module.exports = {
 		app: [
 			'webpack-dev-server/client?http://localhost:8080',
 			'webpack/hot/dev-server',
-			'./src/index.js',
+			'./src/index.js'
 		],
 		vendor: [
 			'react',
