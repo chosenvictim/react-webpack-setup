@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "NODE_ENV=production webpack -p --config ./webpack.config.prod.js",
 		"start": "node server.js",
-		"dev": "webpack-dev-server --progress --colors --hot --config ./webpack.config.dev.js"
+		"dev": "webpack-dev-server --progress --colors --config ./webpack.config.dev.js"
 	},
 	"author": "Shekhar Kumar <shekhar.mnnit10@gmail.com> (http://iamshek.online/)",
 	"license": "MIT",
