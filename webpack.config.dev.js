@@ -7,7 +7,7 @@ module.exports = {
 	entry: {
 		app: [
 			'webpack-dev-server/client?http://localhost:8080',
-			'webpack/hot/only-dev-server',
+			'webpack/hot/dev-server',
 			'./src/index.js',
 		],
 		vendor: [
@@ -38,9 +38,8 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.css$/,
-				include: /node_modules/,
-				loaders: ['style-loader', 'css-loader'],
+				test: /\.scss$/,
+				loaders: ["style", "css", "sass"]
 			}, {
 				test: /\.jsx?$/,
 				exclude: [/node_modules/, /.+\.config.js/],
@@ -50,10 +49,10 @@ module.exports = {
 				}
 			}, {
 				test: /\.(jpe?g|gif|png|svg)$/i,
-				loader: 'url-loader?limit=10000',
+				loader: 'url-loader?limit=10000'
 			}, {
 				test: /\.json$/,
-				loader: 'json-loader',
+				loader: 'json-loader'
 			},
 		],
 	},

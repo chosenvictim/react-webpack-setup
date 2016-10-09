@@ -34,19 +34,18 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.css$/,
-				include: /node_modules/,
-				loaders: ['style-loader', 'css-loader'],
+				test: /\.scss$/,
+				loader: ExtractTextPlugin.extract("style", "css", "sass")
 			}, {
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
-				loader: 'babel',
+				loader: 'babel'
 			}, {
 				test: /\.(jpe?g|gif|png|svg)$/i,
-				loader: 'url-loader?limit=10000',
+				loader: 'url-loader?limit=10000'
 			}, {
 				test: /\.json$/,
-				loader: 'json-loader',
+				loader: 'json-loader'
 			},
 		],
 	},
