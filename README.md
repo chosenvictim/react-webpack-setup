@@ -14,13 +14,14 @@ React Webpack Babel setup for kickstarting project in no time
 **Instructions**
 
 1. clone the repo: ```git clone https://github.com/shek8034/react-webpack-setup.git```
-2. For development version, follow these steps:-
+2. Run ```npm install```
+3. For development version, follow these steps:-
 
   a) ```npm run dev``` to start webpack dev server.
 
   b) Hit ```http://localhost:8080``` and you app is served by webpack dev server. It uses hot reloading, so any chagne you make in your code with be built automatically and reflected in the browser.
 
-3. For production build, follow these steps:-
+4. For production build, follow these steps:-
 
   a) ```npm run build``` to create a dist directory with production build. It has app.js and vendor.js code separated.
 
