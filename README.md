@@ -36,3 +36,7 @@ I will keep updating this repo and will try to make it more resuable.
 **Contributions**
 
 Contributions are welcome and if someone want to add something to repo and improve it, please go ahead and raise PR or write to me ```shekhar.mnnit10@gmail.com```
+
+**LICENSE**
+
+MIT
