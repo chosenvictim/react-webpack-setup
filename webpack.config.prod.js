@@ -24,7 +24,7 @@ module.exports = {
 	},
 
 	resolve: {
-		extensions: ['', '.js', '.jsx'],
+		extensions: ['', '.js', '.jsx', '.svg'],
 		modules: [
 			'src',
 			'node_modules',
@@ -41,12 +41,15 @@ module.exports = {
 				exclude: /node_modules/,
 				loader: 'babel'
 			}, {
-				test: /\.(jpe?g|gif|png|svg)$/i,
+				test: /\.(jpe?g|gif|png)$/i,
 				loader: 'url-loader?limit=10000'
 			}, {
 				test: /\.json$/,
 				loader: 'json-loader'
-			},
+			}, {
+                test: /\.svg?$/,
+                loader: 'svg-sprite?name=[name]_[hash]!svgo'
+            }
 		],
 	},
 

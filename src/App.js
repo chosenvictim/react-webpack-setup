@@ -1,7 +1,17 @@
-import React from 'react';
+/**
+ * Root Component
+ */
+import React, { Component } from 'react';
+import { Link } from 'react-router';
 
-const App = () => (
-    <div>Welcome to the notorious React world. Build something amazing.</div>
-);
+export default function App(props)  {
 
-export default App;
+    return (
+        <div>
+            <ul role="nav">
+                <li><Link to="/home">Home</Link></li>
+            </ul>
+            {props.children}
+        </div>
+    );
+}
