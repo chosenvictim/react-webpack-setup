@@ -6,10 +6,11 @@ React Webpack Babel Koa setup for kickstarting project in no time
 **Libraries used**
 
 1. [React](https://facebook.github.io/react/) v15.2
-2. [Webpack](https://webpack.github.io/) v1.13.2
-3. [Webpack dev server](https://github.com/webpack/webpack-dev-server) v1.16.1
-4. [Babel](http://babeljs.io/) v 6^
-5. [koa](http://koajs.com/) v1.2
+2. [Redux](http://redux.js.org/) v3.6
+3. [Webpack](https://webpack.github.io/) v1.13.2
+4. [Webpack dev server](https://github.com/webpack/webpack-dev-server) v1.16.1
+5. [Babel](http://babeljs.io/) v 6^
+6. [koa](http://koajs.com/) v1.2
 
 **Instructions**
 
