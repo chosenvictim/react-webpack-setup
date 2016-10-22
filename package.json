@@ -8,8 +8,22 @@
     "start": "node server.js",
     "dev": "webpack-dev-server --progress --colors --config ./webpack.config.dev.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shek8034/react-webpack-setup"
+  },
   "author": "Shekhar Kumar <shekhar.mnnit10@gmail.com> (http://iamshek.online/)",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "react webpack setup",
+    "react starter",
+    "react router",
+    "babel",
+    "koa"
+  ],
   "bugs": {
     "url": "https://github.com/shek8034/react-webpack-setup/issues"
   },
