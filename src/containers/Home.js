@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import fetchPosts from '../actions/redditPostActions';
 
-import Posts from '../components/Posts';
+import Posts from '../presentation/Posts';
 
 class Home extends Component {
 

@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux'
 import configureStore from './store';
+import 'whatwg-fetch';
 
 // Base stylesheet
 import './styles/index.scss'

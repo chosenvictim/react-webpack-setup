@@ -1,13 +1,11 @@
-import 'whatwg-fetch';
 import { checkHttpStatus, parseJSON } from './utils';
 import actionTypes from './actionTypes';
-
-const REDDIT_URL = "http://www.reddit.com/r";
+import * as constants from '../constants';
 
 export default function fetchPosts(post) {
     return function(dispatch) {
         dispatch({ type: actionTypes.GET_REDDIT_POST });
-        return fetch(`${REDDIT_URL}/${post}.json`, {
+        return fetch(`${constants.REDDIT_URL}/${post}.json`, {
             method: "GET"
         })
         .then(checkHttpStatus)
