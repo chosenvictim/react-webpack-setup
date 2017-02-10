@@ -1,6 +1,6 @@
 import { checkHttpStatus, parseJSON } from './utils';
 import actionTypes from './actionTypes';
-import * as constants from '../constants';
+import constants from '../constants';
 
 export default function fetchPosts(post) {
     return function(dispatch) {

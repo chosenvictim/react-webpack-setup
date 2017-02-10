@@ -1,14 +1,24 @@
 var koa         = require("koa");
 var serve       = require("koa-static");
 var path        = require('path');
+var fs          = require("fs");
 var config      = require("./config");
 
 var server = koa();
 server.use(serve(path.join(__dirname, 'dist')));
 
+var readFileThunk = function(src) {
+    return new Promise(function (resolve, reject) {
+        fs.readFile(src, 'utf8', function (err, data) {
+            if(err) return reject(err);
+            resolve(data);
+        });
+    });
+}
+
 server.use(function*(next) {
     try {
-        yield next;
+        this.body = yield readFileThunk(__dirname + '/dist/index.html');;
     } catch (err){
         console.log('from serverjs',err);
         this.status = err.status || 500;
