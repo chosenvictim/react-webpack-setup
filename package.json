@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/shek8034/react-webpack-setup/issues"
   },
-  "dependencies": {
+  "devDependencies": {
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
     "babel-preset-es2015": "6.16.0",
@@ -38,22 +38,8 @@
     "file-loader": "0.9.0",
     "html-webpack-plugin": "2.22.0",
     "json-loader": "0.5.4",
-    "kcors": "1.3.0",
-    "koa": "1.2.4",
-    "koa-compress": "1.0.9",
-    "koa-mount": "1.3.0",
-    "koa-router": "5.4.0",
-    "koa-static": "2.0.0",
-    "koa-validation": "0.1.9",
     "node-sass": "3.10.1",
     "path": "0.12.7",
-    "react": "15.3.2",
-    "react-dom": "15.3.2",
-    "react-redux": "4.4.5",
-    "react-router": "2.8.1",
-    "react-router-redux": "4.0.6",
-    "redux": "3.6.0",
-    "redux-thunk": "2.1.0",
     "sass-loader": "4.0.2",
     "style-loader": "0.13.1",
     "svg-sprite-loader": "0.0.31",
@@ -62,5 +48,21 @@
     "webpack": "1.13.2",
     "webpack-dev-server": "1.16.1",
     "webpack-manifest-plugin": "1.0.1"
+  },
+  "dependencies": {
+    "kcors": "1.3.0",
+    "koa": "1.2.4",
+    "koa-compress": "1.0.9",
+    "koa-mount": "1.3.0",
+    "koa-router": "5.4.0",
+    "koa-static": "2.0.0",
+    "koa-validation": "0.1.9",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
+    "react-redux": "4.4.5",
+    "react-router": "2.8.1",
+    "react-router-redux": "4.0.6",
+    "redux": "3.6.0",
+    "redux-thunk": "2.1.0"
   }
 }
