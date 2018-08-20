@@ -10,7 +10,7 @@ React Redux Webpack Babel Koa setup for kickstarting project in no time
 3. [React-Router](https://github.com/ReactTraining/react-router) v2.8
 4. [Webpack](https://webpack.github.io/) v1.13.2
 5. [Webpack dev server](https://github.com/webpack/webpack-dev-server) v1.16
-6. [Babel](http://babeljs.io/) v 6^
+6. [Babel](http://babeljs.io/) v6
 7. [koa](http://koajs.com/) v1.2
 
 **Instructions**
