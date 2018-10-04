@@ -2,6 +2,7 @@ var webpack             = require('webpack');
 var HtmlWebpackPlugin   = require('html-webpack-plugin');
 
 module.exports = {
+    mode: 'development',
     devtool: 'source-map',
 
     entry: {
@@ -24,7 +25,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.js', '.jsx', '.svg'],
+        extensions: ['*', '.js', '.jsx', '.svg'],
         modules: [
             'src',
             'node_modules',
@@ -39,26 +40,28 @@ module.exports = {
     },
 
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.(scss|css)$/,
-                loaders: ["style", "css", "sass"]
+                loaders: ["style-loader", "css-loader", "sass-loader"]
             }, {
                 test: /\.jsx?$/,
                 exclude: [/node_modules/, /.+\.config.js/],
-                loader: 'babel',
-                query: {
-                    presets: ['es2015', 'react']
-                }
+                use: { 
+                    loader: 'babel-loader',
+                    query: {
+                        presets: ["@babel/preset-env", "@babel/preset-react"]
+                    }
+                },
             }, {
                 test: /\.(jpe?g|gif|png)$/i,
-                loader: 'url-loader?limit=10000'
+                use: { loader: 'url-loader?limit=10000' },
             }, {
                 test: /\.json$/,
-                loader: 'json-loader'
+                use: { loader:  'json-loader' }
             }, {
                 test: /\.svg?$/,
-                loader: 'svg-sprite?name=[name]_[hash]'
+                use: { loader: 'svg-sprite-loader?name=[name]_[hash]' }
             }
         ],
     },
@@ -70,11 +73,6 @@ module.exports = {
             template: 'index.html',
         }),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'vendor',
-            minChunks: Infinity,
-            filename: 'vendor.js',
-        }),
         new webpack.DefinePlugin({
             'process.env': {
             CLIENT: JSON.stringify(true),
